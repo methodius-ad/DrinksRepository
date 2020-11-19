@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drinks</string>
+    <string name="filters">filters</string>
+    <string name="apply_button">APPLY</string>
+</resources>

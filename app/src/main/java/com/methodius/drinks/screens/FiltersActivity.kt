@@ -20,8 +20,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class FiltersActivity : AppCompatActivity() {
-    lateinit var checkFilter: CheckBox
-    lateinit var nameFilter: TextView
     lateinit var applyButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +27,6 @@ class FiltersActivity : AppCompatActivity() {
         setContentView(R.layout.activity_filters)
 
         var list: List<FilterModel>
-     //   checkFilter = findViewById(R.id.filter_check)!!
-     //   nameFilter = findViewById(R.id.filter_name)
         applyButton = findViewById(R.id.apply_button)
 
         val lab: RetrofitLab = RetrofitLab()
@@ -48,9 +44,6 @@ class FiltersActivity : AppCompatActivity() {
             }
         })
 
-        applyButton.setOnClickListener(View.OnClickListener {
-   //         check()
-        })
     }
 
     fun filtersInit(list: List<FilterModel>) {
@@ -58,10 +51,4 @@ class FiltersActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = FiltersAdapter(list, applyButton)
     }
-
-    fun check() {
-        if(checkFilter.isChecked) {
-            Log.d("logs", nameFilter.text.toString())
-        }
-    }
-    }
+}

@@ -1,4 +1,4 @@
-package com.methodius.drinks
+package com.methodius.drinks.utils
 
 class Values {
 

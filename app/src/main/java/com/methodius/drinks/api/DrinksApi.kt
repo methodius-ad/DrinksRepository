@@ -1,6 +1,6 @@
 package com.methodius.drinks.api
 
-import com.methodius.drinks.Values
+import com.methodius.drinks.utils.Values
 import com.methodius.drinks.model.DrinksList
 import com.methodius.drinks.model.FiltersList
 import retrofit2.Call

@@ -21,7 +21,6 @@ import retrofit2.Response
 
 class DrinksActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_drinks)
